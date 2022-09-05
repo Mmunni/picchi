@@ -1,0 +1,101 @@
+/* Medium Layout: 1280px. 
+
+Device Checking : 1000px
+
+*/
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .container{
+        width: 970px;
+    }
+    .about-img {
+        width: 400px;
+    }
+    .single-about-list, .single-team, .single-testimonial, .single-blog{
+        width: 303px;
+    }
+    .feature-1-area::before, .feature-1-area::after {
+        width: 40%;
+    }
+    .single-service {
+        width: 323px;
+    }
+    .single-process{
+        width: 220px;
+    }
+    .single-price {
+        padding: 10px;
+        width: 303px;
+    }
+}
+
+
+/* Tablet Layout: 768px. 
+Device Checking : 800px
+
+*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container{
+        width: 750px;
+    }
+    
+    .logo {
+        width: 30%;
+        text-align: center;
+    }
+    .header-icon {
+        font-size: 25px;
+        margin: 0 20px;
+        color: #fff;
+        display: block;
+    }
+    .close-menu{
+        margin: 30px;
+    }
+    .menu {
+        position: absolute;
+        height: 100vh;
+        background-color: #333;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        transition: .3s;
+    }
+    .menu ul{
+        margin-top: 30px;
+    }
+   .menu ul li{
+    display: block;
+    padding: 15px;
+   }
+   .menu ul li a {
+	font-size: 18px;
+}
+    .about-content {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .about-img {
+        width: 100%;
+    }
+    .single-about-list {
+        padding: 5px;
+        width: 240px;
+        margin-right: 15px;
+    }
+}
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    .container{
+        width: 300px;
+    }
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
