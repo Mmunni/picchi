@@ -119,6 +119,7 @@ img{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
   }
   /*Btn css */
   .btn-box, .btn-border {
@@ -257,7 +258,7 @@ header{
 	font-size: 18px;
     margin-bottom: 25px;
 }
-/* about css */
+/* 04 about css */
 .about-content {
     width: 50%;
   }
@@ -353,6 +354,10 @@ header{
 .features-box-area {
   width: 50%;
 }
+.single-feature-box i {
+	font-size: 23px;
+	margin-bottom: 15px;
+}
 .single-feature-box h4 {
 	text-transform: capitalize;
 	font-size: 20px;
@@ -391,13 +396,230 @@ header{
   transition: .3s;
   margin-bottom: 15px;
 }
+.single-service i{
+  font-size: 20px;
+}
 .single-service h4 {
   font-size: 20px;
-	margin: 10px 0;
+	margin: 20px 0;
 }
 .single-service:hover{
   box-shadow: 0 15px 50px #808080;
 }
 .single-service:nth-child(3),.single-service:nth-child(6) {
   margin-right: 0;
+}
+/* workprocess area */
+
+.process-title h4, .process-title p,.process-title h4 span{
+  color: #fff;
+}
+
+.single-process {
+  width: 275px;
+  margin-right: 23px;
+}
+.single-process:nth-child(4) {
+  margin-right: 0;
+}
+.single-process h4 {
+  color: #fff;
+  background-color: #e67e22;
+  position: relative;
+  padding: 12px 15px;
+  text-transform: capitalize;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+.single-process span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #d35400;
+  height: 100%;
+  width: 50px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+.single-process p {
+  padding: 20px 10px;
+  color: #fff;
+  font-size: 17px;
+}
+/* latest-project css*/
+.single-project {
+  width: 380px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+  position: relative;
+}
+.project-img {
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  
+}
+.single-project:nth-child(3),.single-project:nth-child(6)  {
+  margin-right: 0;
+}
+.project-hover,.project-hover:before{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  
+}
+.project-hover{
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 2;
+  transition: .5s;
+  transform: scale(0);
+}
+.project-hover::before{
+  content: "";
+  background-color: #000;
+  opacity: .85;
+ 
+}
+.project-content{
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.project-content h3 {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 22px;
+}
+.project-content span {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.single-project:hover .project-hover{
+  opacity: 1;
+  transform: scale(1);
+}
+/* counter css */
+.counter-area{
+  background-position: fixed;
+  height: 50vh;
+}
+.single-counter {
+  color: #fff;
+  width: 280px;
+  margin-right: 16px;
+  text-align: center;
+}
+.single-counter:nth-child(4) {
+  margin-right: 0;
+}
+.single-counter i {
+  font-size: 30px;
+  text-align: center;
+}
+.single-counter h3 {
+  margin-top: 15px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.single-counter span {
+  display: block;
+  font-size: 23px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-top: 12px;
+}
+/* team member css */
+.single-team-member {
+  width: 380px;
+  margin-right: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.single-team-member:nth-child(3) {
+  margin-right: 0;
+}
+.team-member-img {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: top center;
+}
+.team-member-hover, .team-member-hover:before {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+ .team-member-hover{
+  z-index: 2;
+  opacity: 0;
+  transform: rotate(0);
+  visibility: hidden;
+  transition: .5s;
+  
+}
+.team-member-hover:before {
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: .7;
+  z-index: -1;
+}
+.team-member-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+.team-member-content h3 {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 23px;
+  font-weight: 600;
+}
+.team-member-content span {
+  display: block;
+  font-size: 15px;
+  font-weight: 300;
+  margin: 8px 0;
+}
+.team-member-content i {
+	color: #fff;
+	margin-right: 5px;
+}
+.single-team-member:hover .team-member-hover{
+  opacity: 1;
+  transform: rotate(360deg);
+  visibility: visible;
+} 
+/* our-work css */
+.our-work-area{
+  height: 50vh;
+}
+.our-work-content {
+  color: #fff;
+}
+.our-work-content i {
+  font-size: 70px;
+}
+.our-work-content h2 {
+  font-size: 35px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 15px 0;
+}
+.our-work-content p {
+  color: #fff;
 }
