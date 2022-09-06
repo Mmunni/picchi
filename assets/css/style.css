@@ -7,8 +7,22 @@
     ----------------
 
     01. Reset CSS
+      1.01 common bg css
+      1.02 content center css
+      1.03 Btn css
+      1.04 Section title
     02. Header CSS
     03. Banner CSS
+    04. About css
+    05. Feature-1 css
+    06. Services css
+    07. Workprocess css
+    08. Latest-project css
+    09. Counter css
+    10. Team member css
+    11. Our-work css
+    12. Price area css
+    13. Testimonial css
 
 */
 /* 01. Reset CSS */
@@ -95,7 +109,7 @@ img{
     width: 1170px;
     margin: 0 auto;
 }
-/* common bg css */
+/*1.01 common bg css */
 .bg {
     position: relative;
     background-size: cover;
@@ -113,7 +127,7 @@ img{
     opacity: .8;
     z-index: -1;
   }
-  /* content center css */
+  /*1.02 content center css */
   .content-center{
     position: absolute;
     top: 50%;
@@ -121,7 +135,7 @@ img{
     transform: translate(-50%, -50%);
     text-align: center;
   }
-  /*Btn css */
+  /*1.03 Btn css */
   .btn-box, .btn-border {
     color: #fff;
     text-transform: capitalize;
@@ -160,7 +174,7 @@ img{
    visibility: visible;
    margin-left: 0;
   }
-/* Section title */
+/*1.04 Section title */
 
 .section-title h4 {
     color: #777;
@@ -171,8 +185,8 @@ img{
   .section-title h4 span {
     display: block;
     color: #000;
-    text-transform: capitalize;
-    font-size: 40px;
+    text-transform: uppercase;
+    font-size: 35px;
     font-weight: 900;
     margin: 10px 0 25px;
     letter-spacing: 2px;
@@ -184,19 +198,22 @@ img{
     transform: translateX(-50%);
   }
   .section-title h4:before{
-    height: 2px;
-    width: 145px;
+    height: 1px;
+    width: 150px;
     background-color: #777;
-    bottom: -12px;
+    bottom: -16px;
   }
   .section-title h4::after {
 	background-color: var(--primary_color);
-	height: 4px;
+	height: 3px;
 	width: 70px;
-	bottom: -13px;
+	bottom: -16px;
 }
 .section-title{
     margin-bottom: 70px;
+}
+.title-white h4, .title-white p,.title-white h4 span{
+  color: #fff;
 }
 /* 02 header css */
 header{
@@ -258,7 +275,7 @@ header{
 	font-size: 18px;
     margin-bottom: 25px;
 }
-/* 04 about css */
+/* 04 About css */
 .about-content {
     width: 50%;
   }
@@ -343,7 +360,7 @@ header{
   .single-about-list:hover.single-about-list::after,.single-about-list:hover.single-about-list::before{
     width: 50%;
   }
- /* feature-1 css */
+ /*05. Feature-1 css */
  .feature-1-box {
   width: 50%;
   margin-right: 30px;
@@ -387,7 +404,7 @@ header{
   opacity: .8;
   z-index: 2;
 }
-/* services css */
+/*06. Services css */
 .single-service {
   width: 380px;
   margin-right: 15px;
@@ -409,11 +426,7 @@ header{
 .single-service:nth-child(3),.single-service:nth-child(6) {
   margin-right: 0;
 }
-/* workprocess area */
-
-.process-title h4, .process-title p,.process-title h4 span{
-  color: #fff;
-}
+/*07. Workprocess css */
 
 .single-process {
   width: 275px;
@@ -448,7 +461,7 @@ header{
   color: #fff;
   font-size: 17px;
 }
-/* latest-project css*/
+/*08. Latest-project css*/
 .single-project {
   width: 380px;
 	margin-right: 15px;
@@ -508,7 +521,7 @@ header{
   opacity: 1;
   transform: scale(1);
 }
-/* counter css */
+/*09. Counter css */
 .counter-area{
   background-position: fixed;
   height: 50vh;
@@ -538,7 +551,7 @@ header{
   text-transform: capitalize;
   margin-top: 12px;
 }
-/* team member css */
+/*10. Team member css */
 .single-team-member {
   width: 380px;
   margin-right: 15px;
@@ -604,7 +617,7 @@ header{
   transform: rotate(360deg);
   visibility: visible;
 } 
-/* our-work css */
+/*11. Our-work css */
 .our-work-area{
   height: 50vh;
 }
@@ -613,13 +626,114 @@ header{
 }
 .our-work-content i {
   font-size: 70px;
+  transition: .3s;
+}
+.our-work-content i:hover{
+  transform: scale(1.5);
 }
 .our-work-content h2 {
   font-size: 35px;
   font-weight: 600;
   text-transform: capitalize;
-  margin: 15px 0;
+  margin: 30px 0;
 }
 .our-work-content p {
   color: #fff;
+}
+/*12. Price area css */
+.single-price {
+  width: 380px;
+  margin-right: 15px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+}
+.single-price:nth-child(3) {
+  margin-right: 0;
+}
+.price-title {
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+h2.price-amount {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+.price-amount {
+  background-color:#fafafa;
+  padding: 10px;
+  color: #000;
+  margin: 30px 0;
+}
+.price-amount.active {
+	background-color: var(--primary_color);
+	color: #fff;
+}
+.price-amount span {
+  font-size: 15px;
+  font-weight: 300;
+}
+.price-item li {
+  padding: 5px;
+  font-size: 15px;
+  margin: 5px 0 15px;
+  border-bottom: 1px dotted #eee;
+}
+/*13. Testimonial css */
+.single-client-review {
+  width: 380px;
+  margin-right: 15px;
+  border: 1px solid #eee;
+  padding: 30px;
+  transition: .5s;
+}
+.single-client-review:nth-child(3) {
+  margin-right: 0;
+}
+.single-client-review i {
+  font-size: 25px;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #eee;
+  line-height: 51px;
+  color: #fff;
+  transition: .3s;
+}
+.single-client-review:hover.single-client-review i{
+  background-color: #fff;
+  color: #000;
+  border-radius: 50%;
+  transform: rotate(360deg);
+}
+.single-client-review p {
+  color: #fff;
+  margin: 20px 0 30px;
+}
+.client-profile {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+.client-image img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.client-details {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  color: #fff;
+}
+.client-details h3 {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.client-details span {
+  display: block;
+  font-size: 13px;
+  font-weight: 3;
+  margin: 5px;
 }
