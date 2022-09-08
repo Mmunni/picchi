@@ -220,6 +220,14 @@ img{
   color: #fff;
 }
 /* 02 header css */
+#pre-loader{
+  background: #4A484B url(../img/pre-loader/squre.gif) no-repeat center center;
+  background-size: 15%;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 1000;
+}
 header{
   position: fixed;
 }
@@ -233,7 +241,7 @@ header{
     /* position: absolute; */
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index:999;
     }
 .logo a {
     font-size: 30px;
@@ -255,9 +263,10 @@ header{
     color: #fff;
     font-size: 17px;
   }
-  .menu ul li a:hover{
+  .menu ul li a:hover,   .menu ul li a.active{
     color: var(--primary_color);
   }
+
   
 /* 03 Banner css */
 .banner-content {
