@@ -11,8 +11,9 @@ function openMenu(){
 function closeMenu(){
     menu.style.right = '-200px'
 }
-
+// pre-loader js
 const loader = document.getElementById('pre-loader')
 window.addEventListener('load', function(){
     loader.style.display = 'none';
-})
+});
+
