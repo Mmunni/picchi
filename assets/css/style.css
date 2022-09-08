@@ -302,6 +302,9 @@ header{
     padding-bottom: 10px;
     color: #777;
   }
+  .single-feature ul li:hover{
+    color: var(--hover_color);
+  }
   .about-image {
 	width: 45%;
 	margin-left: 20px;
@@ -328,6 +331,7 @@ header{
     margin-top: 80px;
     padding: 10px;
     position: relative;
+    text-align: justify;
   }
   .single-about-list:last-child{
     margin-right: 0;
@@ -370,7 +374,9 @@ header{
   margin-right: 30px;
 }
 .single-feature-box {
-  padding: 20px;
+	padding: 20px;
+	width: 100%;
+	height: 315px;
 }
 .features-box-area {
   width: 50%;
@@ -786,19 +792,18 @@ h2.price-amount {
 }
 /* 15. Subscribe css */
 .subscribe-field{
-  width: 800px;
+  width: 80%;
   margin: 0 auto;
-}
-.subscribe form {
   position: relative;
 }
-.subscribe-form input[type="email"] {
-  width: 1000%;
+
+.subscribe-field input[type="email"] {
+  width: 100%;
   padding: 12px 30px;
   border-radius: 20px;
   border: 1px solid #eee;
 }
-.subscribe-form input[type="submit"] {
+.subscribe-field input[type="submit"] {
   position: absolute;
   right:0;
   top: 0;
@@ -813,6 +818,100 @@ h2.price-amount {
   font-weight: 500;
   cursor: pointer;
 }
-.subscribe-form input[type="submit"]:hover{
+.subscribe-field input[type="submit"]:hover{
   background-color: var(--hover_color);
 }
+/* 16. Contact css */
+.contact-info-left {
+	width: 50%;
+}
+.single-contact-info {
+	width: 41%;
+	margin-top: 50px;
+	margin-right: 50px;
+	height: 120px;
+}
+.contact-field {
+  width: 50%;
+}
+.contact-info {
+  display: flex;
+}
+.contact-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contact-icon i {
+  background-color: var(--primary_color);
+  padding: 10px;
+  color: #fff;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  line-height: 20px;
+  font-size: 17px;
+}
+.contact-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-details h3 {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.contact-details span {
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 3px;
+  font-family: 'Poppins', sans-serif;
+}
+.contact-field{
+  width: 48%;
+  margin-left: 20px;
+}
+.contact-field input,.contact-field textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.contact-field input[type="submit"] {
+  background-color: var(--primary_color);
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+/* 17. Footer css */
+
+.footer-area {
+  background-color: #333;
+  padding: 50px;
+  color: #fff;
+  text-align: center;
+}
+
+.links ul li {
+  display: inline-block;
+}
+.links ul li a {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #fff;
+}
+.footer-area p {
+	color: #fff;
+	margin-top: 13px;
+	text-align: center;
+}
+
